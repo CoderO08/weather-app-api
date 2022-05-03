@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: san-serif;
+  background-image: url("./images/ben.jpg");
+  background-size: cover;
+  opacity: 0.49;
+}
+
+.app-wrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+
+section {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.city {
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5e9060;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 10;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.main {
+  margin: auto 10px;
+}
+
+.main-temp {
+  text-align: center;
+}
+
+.temp {
+  font-size: 52px;
+  font-weight: bold;
+  margin-top: 40px;
+  letter-spacing: 3px;
+  color: #5e9060;
+}
+
+.weather {
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: bold;
+  opacity: 0.7;
+  letter-spacing: 2px;
+  /* color:#43a047 ; */
+}
+
+.hi-low {
+  padding: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #1b5e20;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header input {
+  width: 100%;
+  padding: 15px 25px;
+  max-width: 250px;
+  border: none;
+  outline: none;
+   background-color: #76ff03;
+  border-radius: 16px 0 16px 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 300px;
+  border-bottom: 3px solid rgb(195, 103, 207);
+  transition: 0.3s ease-out;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 16px 0 16px;
+}
+
+
+@media (max-width: 900px) {
+  .app-wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 200px auto;
+  }
+
+  .header {
+    margin: 0 0;
+  }
+
+  section {
+  }
+}
